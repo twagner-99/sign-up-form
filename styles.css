@@ -9,4 +9,37 @@
 
 .body {
     display: flex;
+    height: 100vh;
+}
+
+img {
+    height: 100%;
+    width: auto;
+}
+
+.main-content,
+.btn-container {
+    background-color: rgb(229, 229, 229);
+}
+
+form {
+    background-color: white;
+}
+
+form > * {
+    padding-left: 1rem;;
+}
+
+.main-content > div {
+    padding-left: 1rem;
+}
+
+.user-inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label,
+input {
+    display: block;
 }

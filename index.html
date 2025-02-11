@@ -19,9 +19,9 @@
                 </p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <div>
+            <form action="#" method="post">
                 <h1>Let's do this!</h1>
-                <form action="#" method="post">
+                <div class="user-inputs">
                     <div>
                         <label for="first-name">FIRST NAME</label>
                         <input type="text" id="first-name"  name="first-name" required>
@@ -46,12 +46,11 @@
                         <label for="pass-conf">CONFIRM PASSWORD</label>
                         <input type="password" id="pass-conf" name="pass-conf" required>
                     </div>
-
-                    <!-- PUT ALL FORM CONTROLS -->
-                    <!-- INCLUDE THE SUBMIT BUTTON IN A DIV? -->
-                </form>
-
-            </div>
+                </div>
+                <div class="btn-container">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
             <div>
                 <p>Already have an account? <span>Log in</span></p>
             </div>
