@@ -7,26 +7,54 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <div class="bckgnd-image">
-        <img src="./images/costa-rica-9301364_1280.jpg" href="A colorful toucan.">
-    </div>
-    <div class="main-content">
-        <div>
-            <p>
-                This is not a real online service! You know you need something like this in your life to
-                help you realize your deepest dreams. Sign up <em>now</em> to get started.
-            </p>
-            <p>You <em>know</em> you want to.</p>
+    <div class="body">
+        <div class="bckgnd-image">
+            <img src="./images/costa-rica-9301364_1280.jpg" href="A colorful toucan.">
         </div>
-        <div>
-            <h1>Let's do this!</h1>
-            <form>
-                <!-- PUT ALL FORM CONTROLS -->
-                 <!-- INCLUDE THE SUBMIT BUTTON IN A DIV? -->
-            </form>
-        </div>
-        <div>
-            <p>Already have an account? <span>Log in</span></p>
+        <div class="main-content">
+            <div>
+                <p>
+                    This is not a real online service! You know you need something like this in your life to
+                    help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div>
+                <h1>Let's do this!</h1>
+                <form action="#" method="post">
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name"  name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="pass-conf">CONFIRM PASSWORD</label>
+                        <input type="password" id="pass-conf" name="pass-conf" required>
+                    </div>
+
+                    <!-- PUT ALL FORM CONTROLS -->
+                    <!-- INCLUDE THE SUBMIT BUTTON IN A DIV? -->
+                </form>
+
+            </div>
+            <div>
+                <p>Already have an account? <span>Log in</span></p>
+            </div>
         </div>
     </div>
 </body>
