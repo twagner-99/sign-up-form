@@ -1,14 +1,18 @@
 @font-face {
     font-family: 'ostrich_sansmedium';
-    src: url('ostrichsans-medium-webfont.woff2') format('woff2'),
-         url('ostrichsans-medium-webfont.woff') format('woff');
+    src: url('./fonts/ostrichsans-medium-webfont.woff2') format('woff2'),
+         url('./fonts/ostrichsans-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+:root {
+    --system-font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 body {
-    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: var(--system-font-stack);
     font-size: 1rem;
     height: 100vh;
     display: flex;
@@ -24,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
+    gap: 0.75rem;
     top: 35%;
     height: 12%;
     width: 100%;
@@ -33,6 +38,12 @@ body {
 img.logo {
     height: 90%;
     width: auto;
+}
+
+div.logo {
+    font-family: "ostrich_sansmedium", var(--system-font-stack);
+    color: white;
+    font-size: 5rem;
 }
 
 .bckgnd-img {
