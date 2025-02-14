@@ -46,6 +46,16 @@ div.logo {
     font-size: 5rem;
 }
 
+.img-credit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: .75rem;
+    font-weight: 200;
+}
+
 .bckgnd-img {
     height: 100%;
     width: auto;
