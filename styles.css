@@ -97,13 +97,8 @@ form > * {
     gap: 0.75rem;
 }
 
-label,
-input {
-    display: block;
-}
-
 label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 p {
@@ -113,7 +108,6 @@ p {
 button {
     background-color: var(--green);
     color: white;
-    font-weight: 700;
     border: none;
     padding: .75rem 1.75rem;
     border-radius: 5px;
@@ -121,5 +115,19 @@ button {
 
 .green {
     color: var(--green);
-    font-weight: 700;
+}
+
+input {
+    outline: none;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 2px solid rgb(72, 132, 185);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .50);
+}
+
+input:invalid {
+    border: 2px solid red;
 }
